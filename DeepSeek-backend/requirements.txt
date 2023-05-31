@@ -1,0 +1,12 @@
+Flask==2.2.2
+Flask_Cors==3.0.6
+jieba==0.42.1
+matplotlib==3.5.1
+numpy==1.22.3
+opencv_python==4.5.5.64
+Pillow==9.0.1
+PyJWT==2.3.0
+reportlab==4.0.0
+scipy==1.8.0
+torch==1.12.1
+tqdm==4.64.1

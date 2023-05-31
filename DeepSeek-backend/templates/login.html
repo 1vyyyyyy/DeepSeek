@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <title>登录</title>
+  </head>
+  <body>
+    <h1>登录</h1>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul>
+          {% for message in messages %}
+            <li>{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+    <form action="{{ url_for('login') }}" method="post">
+      <p>
+        <label for="username">用户名:</label>
+        <input type="text" name="username" id="username" value="{{ request.form['username'] }}">
+      </p>
+      <p>
+        <label for="password">密码:</label>
+        <input type="password" name="password" id="password">
+      </p>
+      <p><input type="submit" value="Login"></p>
+    </form>
+  </body>
+</html>
